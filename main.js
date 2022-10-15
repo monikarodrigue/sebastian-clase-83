@@ -1,11 +1,18 @@
 canvas=document.getElementById("myCanvas");
 ctx=canvas.getContext("2d");
-var last_position_of_x,last_position_of_y
+
+var last_position_of_x,last_position_of_y;
+
 color="red";
 width_of_line=1
+
 var width=screen.width;
+
 new_width=screen.width-70;
-new height=screen.height-300;
+
+//// problema al declarar la variable new por new_
+new_height=screen.height-300;
+
 if (width<992) {
   document.getElementById("myCanvas").width=new_width;
   document.getElementById("myCanvas").height=new_height;
